@@ -1,0 +1,1149 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.5">
+  <NonVisualComponents>
+    <Container class="javax.swing.JPanel" name="panelPrincipal">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="panelPrincipal" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="labelFx" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelFzero" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="textEntrada" alignment="0" pref="656" max="32767" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="textResultat" pref="528" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="labelValorX" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="textValorX" min="-2" pref="53" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Component id="jSplitPane1" alignment="1" pref="725" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="textEntrada" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="labelFx" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="textResultat" alignment="3" pref="31" max="32767" attributes="1"/>
+                          <Component id="labelFzero" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="textValorX" alignment="3" pref="31" max="32767" attributes="1"/>
+                          <Component id="labelValorX" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jSplitPane1" pref="399" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="textEntrada">
+          <Properties>
+            <Property name="font" type="java.awt.Font" noResource="true" editor="org.netbeans.modules.form.editors2.FontEditor">
+              <FontInfo relative="true">
+                <Font component="textEntrada" property="font" relativeSize="false" size="18"/>
+              </FontInfo>
+            </Property>
+            <Property name="text" type="java.lang.String" resourceKey="textEntrada.text"/>
+            <Property name="name" type="java.lang.String" value="textEntrada" noResource="true"/>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[6, 25]"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="textEntradaFocusGained"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="textEntrada.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){&#xd;&#xa; public void changedUpdate(javax.swing.event.DocumentEvent e){processarEntrada();}&#xd;&#xa; public void removeUpdate(javax.swing.event.DocumentEvent e){processarEntrada();}&#xd;&#xa; public void insertUpdate(javax.swing.event.DocumentEvent e){processarEntrada();}&#xd;&#xa;});"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textResultat">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="font" type="java.awt.Font" noResource="true" editor="org.netbeans.modules.form.editors2.FontEditor">
+              <FontInfo relative="true">
+                <Font component="textResultat" property="font" relativeSize="false" size="18"/>
+              </FontInfo>
+            </Property>
+            <Property name="text" type="java.lang.String" resourceKey="textResultat.text"/>
+            <Property name="name" type="java.lang.String" value="textResultat" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelFx">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="labelFx.font"/>
+            <Property name="text" type="java.lang.String" resourceKey="labelFx.text"/>
+            <Property name="name" type="java.lang.String" value="labelFx" noResource="true"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JSplitPane" name="jSplitPane1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="jSplitPane1" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JTabbedPane" name="panelPestanyes">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="panelPestanyes" noResource="true"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                  <JSplitPaneConstraints position="right"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JPanel" name="panelTeclat">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="panelTeclat" noResource="true"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Teclat">
+                        <Property name="tabTitle" type="java.lang.String" resourceKey="panelTeclat.TabConstraints.tabTitle"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                    <Property name="columns" type="int" value="2"/>
+                    <Property name="horizontalGap" type="int" value="5"/>
+                    <Property name="rows" type="int" value="2"/>
+                    <Property name="verticalGap" type="int" value="5"/>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JPanel" name="panelTeclatControlValors">
+                      <Properties>
+                        <Property name="name" type="java.lang.String" value="panelTeclatControlValors" noResource="true"/>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                        <Property name="columns" type="int" value="1"/>
+                        <Property name="rows" type="int" value="2"/>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JPanel" name="panelTeclatControl">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                <TitledBorder title="Control">
+                                  <Property name="titleX" resourceKey="panelTeclatControl.border.title"/>
+                                </TitledBorder>
+                              </Border>
+                            </Property>
+                            <Property name="name" type="java.lang.String" value="panelTeclatControl" noResource="true"/>
+                          </Properties>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                            <Property name="columns" type="int" value="0"/>
+                            <Property name="rows" type="int" value="1"/>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="javax.swing.JButton" name="botoRetroces">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" resourceKey="botoRetroces.text"/>
+                                <Property name="name" type="java.lang.String" value="botoRetroces" noResource="true"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoRetrocesActionPerformed"/>
+                              </Events>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="botoReinicia">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" resourceKey="botoReinicia.text"/>
+                                <Property name="name" type="java.lang.String" value="botoReinicia" noResource="true"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoReiniciaActionPerformed"/>
+                              </Events>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Container class="javax.swing.JPanel" name="panelTeclatValors">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                <TitledBorder title="Valors">
+                                  <Property name="titleX" resourceKey="panelTeclatValors.border.title"/>
+                                </TitledBorder>
+                              </Border>
+                            </Property>
+                            <Property name="name" type="java.lang.String" value="panelTeclatValors" noResource="true"/>
+                          </Properties>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                            <Property name="columns" type="int" value="0"/>
+                            <Property name="rows" type="int" value="1"/>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="javax.swing.JButton" name="botoValorX">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" resourceKey="botoValorX.text"/>
+                                <Property name="name" type="java.lang.String" value="botoValorX" noResource="true"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoValorXActionPerformed"/>
+                              </Events>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="botoValorI">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" resourceKey="botoValorI.text"/>
+                                <Property name="name" type="java.lang.String" value="botoValorI" noResource="true"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoValorIActionPerformed"/>
+                              </Events>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="panelTeclatParentesisDerivada">
+                      <Properties>
+                        <Property name="name" type="java.lang.String" value="panelTeclatParentesisDerivada" noResource="true"/>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                        <Property name="columns" type="int" value="1"/>
+                        <Property name="rows" type="int" value="2"/>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="javax.swing.JPanel" name="panelTeclatParentesis">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                <TitledBorder title="Par&#xe8;ntesis">
+                                  <Property name="titleX" resourceKey="panelTeclatParentesis.border.title"/>
+                                </TitledBorder>
+                              </Border>
+                            </Property>
+                            <Property name="name" type="java.lang.String" value="panelTeclatParentesis" noResource="true"/>
+                          </Properties>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                            <Property name="columns" type="int" value="0"/>
+                            <Property name="rows" type="int" value="1"/>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="javax.swing.JButton" name="botoObrirParentesis">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" resourceKey="botoObrirParentesis.text"/>
+                                <Property name="name" type="java.lang.String" value="botoObrirParentesis" noResource="true"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoObrirParentesisActionPerformed"/>
+                              </Events>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="botoTancarParentesis">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" resourceKey="botoTancarParentesis.text"/>
+                                <Property name="name" type="java.lang.String" value="botoTancarParentesis" noResource="true"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoTancarParentesisActionPerformed"/>
+                              </Events>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Container class="javax.swing.JPanel" name="panelTeclatDerivada">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                                <TitledBorder title="Derivada">
+                                  <Property name="titleX" resourceKey="panelTeclatDerivada.border.title"/>
+                                </TitledBorder>
+                              </Border>
+                            </Property>
+                            <Property name="name" type="java.lang.String" value="panelTeclatDerivada" noResource="true"/>
+                          </Properties>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                            <Property name="columns" type="int" value="0"/>
+                            <Property name="rows" type="int" value="1"/>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="javax.swing.JButton" name="botoDerivada">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" resourceKey="botoDerivada.text"/>
+                                <Property name="name" type="java.lang.String" value="botoDerivada" noResource="true"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoDerivadaActionPerformed"/>
+                              </Events>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="panelTeclatNombres">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder title="Nombres">
+                              <Property name="titleX" resourceKey="panelTeclatNombres.border.title"/>
+                            </TitledBorder>
+                          </Border>
+                        </Property>
+                        <Property name="name" type="java.lang.String" value="panelTeclatNombres" noResource="true"/>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                        <Property name="columns" type="int" value="4"/>
+                        <Property name="rows" type="int" value="4"/>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="javax.swing.JButton" name="botoNombre7">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoNombre7.text"/>
+                            <Property name="name" type="java.lang.String" value="botoNombre7" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoNombre7ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoNombre8">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoNombre8.text"/>
+                            <Property name="name" type="java.lang.String" value="botoNombre8" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoNombre8ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoNombre9">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoNombre9.text"/>
+                            <Property name="name" type="java.lang.String" value="botoNombre9" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoNombre9ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoNombre4">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoNombre4.text"/>
+                            <Property name="name" type="java.lang.String" value="botoNombre4" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoNombre4ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoNombre5">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoNombre5.text"/>
+                            <Property name="name" type="java.lang.String" value="botoNombre5" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoNombre5ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoNombre6">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoNombre6.text"/>
+                            <Property name="name" type="java.lang.String" value="botoNombre6" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoNombre6ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoNombre1">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoNombre1.text"/>
+                            <Property name="name" type="java.lang.String" value="botoNombre1" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoNombre1ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoNombre2">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoNombre2.text"/>
+                            <Property name="name" type="java.lang.String" value="botoNombre2" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoNombre2ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoNombre3">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoNombre3.text"/>
+                            <Property name="name" type="java.lang.String" value="botoNombre3" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoNombre3ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoNombre0">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoNombre0.text"/>
+                            <Property name="name" type="java.lang.String" value="botoNombre0" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoNombre0ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoPunt">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoPunt.text"/>
+                            <Property name="name" type="java.lang.String" value="botoPunt" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoPuntActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoExp">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoExp.text"/>
+                            <Property name="name" type="java.lang.String" value="botoExp" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoExpActionPerformed"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="javax.swing.JPanel" name="panelTeclatOperacions">
+                      <Properties>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                            <TitledBorder title="Operacions">
+                              <Property name="titleX" resourceKey="panelTeclatOperacions.border.title"/>
+                            </TitledBorder>
+                          </Border>
+                        </Property>
+                        <Property name="name" type="java.lang.String" value="panelTeclatOperacions" noResource="true"/>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                        <Property name="columns" type="int" value="1"/>
+                        <Property name="rows" type="int" value="5"/>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="javax.swing.JButton" name="botoElevar">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoElevar.text"/>
+                            <Property name="name" type="java.lang.String" value="botoElevar" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoElevarActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoDividir">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoDividir.text"/>
+                            <Property name="name" type="java.lang.String" value="botoDividir" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoDividirActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoMultiplicar">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoMultiplicar.text"/>
+                            <Property name="name" type="java.lang.String" value="botoMultiplicar" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoMultiplicarActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoRestar">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoRestar.text"/>
+                            <Property name="name" type="java.lang.String" value="botoRestar" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoRestarActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="botoSumar">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" resourceKey="botoSumar.text"/>
+                            <Property name="name" type="java.lang.String" value="botoSumar" noResource="true"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoSumarActionPerformed"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+                <Container class="calcbatx.GraficFuncio" name="panelGrafic">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="panelGrafic" noResource="true"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Gr&#xe0;fic">
+                        <Property name="tabTitle" type="java.lang.String" resourceKey="panelGrafic.TabConstraints.tabTitle"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="620" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <EmptySpace min="0" pref="370" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                </Container>
+                <Container class="javax.swing.JPanel" name="panelPolinomi">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="panelPolinomi" noResource="true"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Polinomi">
+                        <Property name="tabTitle" type="java.lang.String" resourceKey="panelPolinomi.TabConstraints.tabTitle"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="labelArrels" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelCoeficients" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelDerivada" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelPrimitiva" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="textPrimitiva" pref="444" max="32767" attributes="0"/>
+                                                  <Component id="textDerivada" alignment="1" pref="444" max="32767" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="botoPujarPrimitiva" max="32767" attributes="1"/>
+                                                  <Component id="botoPujarDerivada" alignment="1" pref="47" max="32767" attributes="1"/>
+                                              </Group>
+                                          </Group>
+                                          <Component id="textCoeficients" alignment="1" pref="497" max="32767" attributes="0"/>
+                                          <Component id="textArrels" alignment="0" pref="497" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="botoProcessarPolinomi" alignment="0" pref="596" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="textCoeficients" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelCoeficients" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="textArrels" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelArrels" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="botoPujarDerivada" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                                  <Component id="textDerivada" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelDerivada" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="botoPujarPrimitiva" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="textPrimitiva" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelPrimitiva" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="botoProcessarPolinomi" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="191" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="botoProcessarPolinomi">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="botoProcessarPolinomi.text"/>
+                        <Property name="name" type="java.lang.String" value="botoProcessarPolinomi" noResource="true"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoProcessarPolinomiActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelCoeficients">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="labelCoeficients.text"/>
+                        <Property name="name" type="java.lang.String" value="labelCoeficients" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="textCoeficients">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="text" type="java.lang.String" resourceKey="textCoeficients.text"/>
+                        <Property name="name" type="java.lang.String" value="textCoeficients" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelArrels">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="labelArrels.text"/>
+                        <Property name="name" type="java.lang.String" value="labelArrels" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="textArrels">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="text" type="java.lang.String" resourceKey="textArrels.text"/>
+                        <Property name="name" type="java.lang.String" value="textArrels" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelDerivada">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="labelDerivada.text"/>
+                        <Property name="name" type="java.lang.String" value="labelDerivada" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelPrimitiva">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="labelPrimitiva.text"/>
+                        <Property name="name" type="java.lang.String" value="labelPrimitiva" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="textDerivada">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="text" type="java.lang.String" resourceKey="textDerivada.text"/>
+                        <Property name="name" type="java.lang.String" value="textDerivada" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="textPrimitiva">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="text" type="java.lang.String" resourceKey="textPrimitiva.text"/>
+                        <Property name="name" type="java.lang.String" value="textPrimitiva" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="botoPujarDerivada">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="botoPujarDerivada.text"/>
+                        <Property name="name" type="java.lang.String" value="botoPujarDerivada" noResource="true"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoPujarDerivadaActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="botoPujarPrimitiva">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="botoPujarPrimitiva.text"/>
+                        <Property name="name" type="java.lang.String" value="botoPujarPrimitiva" noResource="true"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoPujarPrimitivaActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel1">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="jPanel1" noResource="true"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+                      <JTabbedPaneConstraints tabName="Integraci&#xf3;">
+                        <Property name="tabTitle" type="java.lang.String" resourceKey="jPanel1.TabConstraints.tabTitle"/>
+                      </JTabbedPaneConstraints>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="labelExtrem2" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelExtrem1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelNombreDivisions" min="-2" max="-2" attributes="0"/>
+                                          <Component id="labelIntegral" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="textIntegral" alignment="1" pref="450" max="32767" attributes="0"/>
+                                          <Component id="textNombreParts" alignment="0" pref="450" max="32767" attributes="0"/>
+                                          <Component id="textExtrem2" pref="450" max="32767" attributes="0"/>
+                                          <Component id="textExtrem1" alignment="1" pref="450" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="botoIntegrar" pref="596" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelExtrem1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="textExtrem1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="labelExtrem2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="textExtrem2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="textNombreParts" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelNombreDivisions" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="textIntegral" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelIntegral" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="botoIntegrar" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="209" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="labelExtrem1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="labelExtrem1.text"/>
+                        <Property name="name" type="java.lang.String" value="labelExtrem1" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelExtrem2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="labelExtrem2.text"/>
+                        <Property name="name" type="java.lang.String" value="labelExtrem2" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelNombreDivisions">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="labelNombreDivisions.text"/>
+                        <Property name="name" type="java.lang.String" value="labelNombreDivisions" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="textExtrem1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="textExtrem1.text"/>
+                        <Property name="name" type="java.lang.String" value="textExtrem1" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="textExtrem2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="textExtrem2.text"/>
+                        <Property name="name" type="java.lang.String" value="textExtrem2" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="textNombreParts">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="textNombreParts.text"/>
+                        <Property name="name" type="java.lang.String" value="textNombreParts" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="botoIntegrar">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="botoIntegrar.text"/>
+                        <Property name="name" type="java.lang.String" value="botoIntegrar" noResource="true"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoIntegrarActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="labelIntegral">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="labelIntegral.text"/>
+                        <Property name="name" type="java.lang.String" value="labelIntegral" noResource="true"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="textIntegral">
+                      <Properties>
+                        <Property name="editable" type="boolean" value="false"/>
+                        <Property name="text" type="java.lang.String" resourceKey="textIntegral.text"/>
+                        <Property name="name" type="java.lang.String" value="textIntegral" noResource="true"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="panelFuncions">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Funcions">
+                      <Property name="titleX" resourceKey="panelFuncions.border.title"/>
+                    </TitledBorder>
+                  </Border>
+                </Property>
+                <Property name="name" type="java.lang.String" value="panelFuncions" noResource="true"/>
+              </Properties>
+              <AccessibilityProperties>
+                <Property name="AccessibleContext.accessibleName" type="java.lang.String" resourceKey="jPanel1.AccessibleContext.accessibleName"/>
+              </AccessibilityProperties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
+                  <JSplitPaneConstraints position="left"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="panelAfegirEsborrarFuncio" alignment="0" max="32767" attributes="0"/>
+                      <Component id="textFuncioUsuari" alignment="0" pref="78" max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" alignment="0" pref="78" max="32767" attributes="1"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jScrollPane1" pref="318" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="textFuncioUsuari" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="panelAfegirEsborrarFuncio" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="jScrollPane1" noResource="true"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JList" name="llistaFuncionsUsuari">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                          <Connection code="new javax.swing.DefaultListModel()" type="code"/>
+                        </Property>
+                        <Property name="name" type="java.lang.String" value="llistaFuncionsUsuari" noResource="true"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="llistaFuncionsUsuariMouseClicked"/>
+                        <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="llistaFuncionsUsuariValueChanged"/>
+                      </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="actualitzarLlistaFuncions();"/>
+                      </AuxValues>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JTextField" name="textFuncioUsuari">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" resourceKey="textFuncioUsuari.text"/>
+                    <Property name="name" type="java.lang.String" value="textFuncioUsuari" noResource="true"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="textFuncioUsuariActionPerformed"/>
+                    <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="textFuncioUsuariFocusGained"/>
+                  </Events>
+                </Component>
+                <Container class="javax.swing.JPanel" name="panelAfegirEsborrarFuncio">
+                  <Properties>
+                    <Property name="name" type="java.lang.String" value="panelAfegirEsborrarFuncio" noResource="true"/>
+                  </Properties>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                    <Property name="columns" type="int" value="0"/>
+                    <Property name="rows" type="int" value="1"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="botoAfegirFuncioUsuari">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="botoAfegirFuncioUsuari.text"/>
+                        <Property name="toolTipText" type="java.lang.String" resourceKey="botoAfegirFuncioUsuari.toolTipText"/>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[39, 23]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[39, 23]"/>
+                        </Property>
+                        <Property name="name" type="java.lang.String" value="botoAfegirFuncioUsuari" noResource="true"/>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[39, 23]"/>
+                        </Property>
+                      </Properties>
+                      <AccessibilityProperties>
+                        <Property name="AccessibleContext.accessibleName" type="java.lang.String" resourceKey="botoAfegirFuncioUsuari.AccessibleContext.accessibleName"/>
+                      </AccessibilityProperties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoAfegirFuncioUsuariActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="botoEsborrarFuncioUsuari">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" resourceKey="botoEsborrarFuncioUsuari.text"/>
+                        <Property name="toolTipText" type="java.lang.String" resourceKey="botoEsborrarFuncioUsuari.toolTipText"/>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[39, 23]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[39, 23]"/>
+                        </Property>
+                        <Property name="name" type="java.lang.String" value="botoEsborrarFuncioUsuari" noResource="true"/>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[39, 23]"/>
+                        </Property>
+                      </Properties>
+                      <AccessibilityProperties>
+                        <Property name="AccessibleContext.accessibleName" type="java.lang.String" resourceKey="botoEsborrarFuncioUsuari.AccessibleContext.accessibleName"/>
+                      </AccessibilityProperties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botoEsborrarFuncioUsuariActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="labelFzero">
+          <Properties>
+            <Property name="font" type="java.awt.Font" resourceKey="labelFzero.font"/>
+            <Property name="text" type="java.lang.String" resourceKey="labelFzero.text"/>
+            <Property name="name" type="java.lang.String" value="labelFzero" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelValorX">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="labelValorX.text"/>
+            <Property name="name" type="java.lang.String" value="labelValorX" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="textValorX">
+          <Properties>
+            <Property name="font" type="java.awt.Font" noResource="true" editor="org.netbeans.modules.form.editors2.FontEditor">
+              <FontInfo relative="true">
+                <Font component="textValorX" property="font" relativeSize="false" size="18"/>
+              </FontInfo>
+            </Property>
+            <Property name="text" type="java.lang.String" resourceKey="textValorX.text"/>
+            <Property name="name" type="java.lang.String" value="textValorX" noResource="true"/>
+          </Properties>
+          <Events>
+            <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="textValorXFocusGained"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="textValorX.getDocument().addDocumentListener(new javax.swing.event.DocumentListener(){&#xa; public void changedUpdate(javax.swing.event.DocumentEvent e){processarEntrada();}&#xa; public void removeUpdate(javax.swing.event.DocumentEvent e){processarEntrada();}&#xa; public void insertUpdate(javax.swing.event.DocumentEvent e){processarEntrada();}&#xa;});"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JMenuBar" name="barraMenu">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="barraMenu" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="menuFitxer">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="menuFitxer.text"/>
+            <Property name="name" type="java.lang.String" value="menuFitxer" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="tancarMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="org.jdesktop.application.Application" id="quit" methodName="quit"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="tancarMenuItem.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="tancarMenuItem.toolTipText"/>
+                <Property name="name" type="java.lang.String" value="tancarMenuItem" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuAjuda">
+          <Properties>
+            <Property name="label" type="java.lang.String" resourceKey="menuAjuda.label"/>
+            <Property name="name" type="java.lang.String" value="menuAjuda" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="ajudaMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="calcbatx.CalcBatxView" id="showAboutBox" methodName="showAboutBox"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="ajudaMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="ajudaMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="barraEstat">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="barraEstat" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="statusPanelSeparator" alignment="0" pref="749" max="32767" attributes="0"/>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="labelEstat" pref="725" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="statusPanelSeparator" min="-2" pref="2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="labelEstat" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JSeparator" name="statusPanelSeparator">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="statusPanelSeparator" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelEstat">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="labelEstat.text"/>
+            <Property name="name" type="java.lang.String" value="labelEstat" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_allCodePost" type="java.lang.String" value="mostrarEstatCorrecte();"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPopupMenu" name="menuGrafic">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="menuGrafic" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <MenuItem class="javax.swing.JCheckBoxMenuItem" name="menuMostrarRe">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="menuMostrarRe.text"/>
+            <Property name="name" type="java.lang.String" value="menuMostrarRe" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="selected" source="panelGrafic" sourcePath="${mostrarRe}" target="menuMostrarRe" targetPath="selected" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </MenuItem>
+        <MenuItem class="javax.swing.JCheckBoxMenuItem" name="menuMostrarIm">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="menuMostrarIm.text"/>
+            <Property name="name" type="java.lang.String" value="menuMostrarIm" noResource="true"/>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="selected" source="panelGrafic" sourcePath="${mostrarIm}" target="menuMostrarIm" targetPath="selected" updateStrategy="0" immediately="false"/>
+          </BindingProperties>
+        </MenuItem>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="component" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="panelPrincipal"/>
+    </Property>
+    <Property name="menuBar" type="javax.swing.JMenuBar" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="barraMenu"/>
+    </Property>
+    <Property name="statusBar" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="barraEstat"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,26,0,0,2,-19"/>
+  </AuxValues>
+</Form>
